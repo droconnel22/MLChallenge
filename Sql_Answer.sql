@@ -2,13 +2,11 @@
 
  SELECT a.name AS "Employee Name"
 FROM employee a, employee b
-WHERE a.manager_id = b.id and a.salary < b.salary
+WHERE a.manager_id = b.id and a.salary > b.salary
 
 --Employee Name
-John      
-Mike      
-Jane      
-Joe       
+Sally     
+Dan             
 
 --Confirmation:
 
@@ -21,13 +19,11 @@ Joe
   , b.salary
 FROM employee a, employee b
 WHERE a.manager_id = b.id 
-and a.salary < b.salary
+and a.salary > b.salary
 
 --Employee Id	Employee Name	salary	Manager Id	Manager Name	salary
-	1			John      		300		3			Sally     		550
-	2			Mike      		200		3			Sally     		550
-	4			Jane      		500		7			Phil      		550
-	5			Joe       		500		7			Phil      		550
+	3			Sally     		550		4			Jane      		500
+	6			Dan       		600		3			Sally     		550
 
 
 

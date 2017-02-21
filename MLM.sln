@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql_Test", "Sql_Test", "{131F1C29-53CF-4B0C-9017-B7C94E9002F8}"
+	ProjectSection(SolutionItems) = preProject
+		Sql_Answer.sql = Sql_Answer.sql
+		..\SqlTest.docx = ..\SqlTest.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SoftwareTest", "SoftwareTest", "{68D5637E-80BD-45DB-B374-AF3693B9021E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareTest", "SoftwareTest\SoftwareTest.csproj", "{5BCC0454-0691-4B22-93B3-9D849BB24799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BCC0454-0691-4B22-93B3-9D849BB24799} = {68D5637E-80BD-45DB-B374-AF3693B9021E}
+	EndGlobalSection
+EndGlobal

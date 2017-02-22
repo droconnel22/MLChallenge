@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NetPositionsCalculator\NetPositionsCalculator.csproj">
+    <ProjectReference Include="..\NetPositionsCalculator\PositionCalculator.csproj">
       <Project>{4380269b-1815-49a4-a744-a4743aef17b1}</Project>
-      <Name>NetPositionsCalculator</Name>
+      <Name>PositionCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

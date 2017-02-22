@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PositionCalculator", "Posit
 		ReadMe.Txt = ReadMe.Txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPositionsCalculator", "NetPositionsCalculator\NetPositionsCalculator.csproj", "{4380269B-1815-49A4-A744-A4743AEF17B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator", "NetPositionsCalculator\PositionCalculator.csproj", "{4380269B-1815-49A4-A744-A4743AEF17B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputFiles", "InputFiles", "{309C6E7D-828D-40D2-81E9-01AB931F6476}"
 	ProjectSection(SolutionItems) = preProject
@@ -27,9 +27,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputFiles", "InputFiles", 
 		..\test_data.csv = ..\test_data.csv
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPositionsCalculator.Test", "NetPositionsCalculator.Test\NetPositionsCalculator.Test.csproj", "{0FFB46F3-0003-4FEF-AECA-9208E1FF1A92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator.Test", "NetPositionsCalculator.Test\PositionCalculator.Test.csproj", "{0FFB46F3-0003-4FEF-AECA-9208E1FF1A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPositionsCalculator.Console", "NetPositionsCalculator.Console\NetPositionsCalculator.Console.csproj", "{CA1EE598-E023-44D2-B87F-89D1E5104049}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator.Console", "NetPositionsCalculator.Console\PositionCalculator.Console.csproj", "{CA1EE598-E023-44D2-B87F-89D1E5104049}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OutputFiles", "OutputFiles", "{14D03DAF-2BCA-41BD-8451-B60600FAB7CF}"
 	ProjectSection(SolutionItems) = preProject

@@ -10,6 +10,7 @@ namespace mlp.interviews.boxing.problem.Factories
 {
     public static class PositionFactory
     {
+        public static IPositions CreatePositions(IEnumerable<string[]> rawlines) => new Positions(rawlines.Select(CreatePosition));
         public static IPosition CreatePosition(string[] model)
         {
            if(model == null) throw  new ArgumentNullException(nameof(model));
@@ -26,7 +27,5 @@ namespace mlp.interviews.boxing.problem.Factories
         {
             return Convert.ToInt32(s);
         }
-
-        public static IPositions CreatePositions(IEnumerable<string[]> rawlines) => new Positions(rawlines.Select(CreatePosition));
     }
 }

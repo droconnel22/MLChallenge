@@ -36,13 +36,11 @@ namespace SoftwareTest.Challenges
         /// <param name="original"></param>
         /// <returns></returns>
 
-        // TODO: Are the following test cases sufficient, to prove your code works
-        // as expected? If not either write more test cases and/or describe what
-        // other tests cases would be needed.
+        /// TODO: Are the following test cases sufficient, to prove your code works
+        /// as expected? If not either write more test cases and/or describe what
+        /// other tests cases would be needed.
         /// I added an empty test case condition to test guard clauses (trival)
-        /// 
-
-
+        /// I also added a very long sequence to test performance and bit math, and everything checked ok
 
         /// TODO: What limitations does your algorithm have (if any)?
         /// The biggest limitation is the presentation. Having to loop through a map reduced subset of the original could be eliminated

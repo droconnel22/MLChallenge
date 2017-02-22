@@ -18,12 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PositionCalculator", "Posit
 		ReadMe.Txt = ReadMe.Txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator", "NetPositionsCalculator\PositionCalculator.csproj", "{4380269B-1815-49A4-A744-A4743AEF17B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator.Domain", "NetPositionsCalculator\PositionCalculator.Domain.csproj", "{4380269B-1815-49A4-A744-A4743AEF17B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputFiles", "InputFiles", "{309C6E7D-828D-40D2-81E9-01AB931F6476}"
 	ProjectSection(SolutionItems) = preProject
-		..\boxed_positions_expected.csv = ..\boxed_positions_expected.csv
-		..\net_positions_expected.csv = ..\net_positions_expected.csv
 		..\test_data.csv = ..\test_data.csv
 	EndProjectSection
 EndProject
@@ -33,7 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionCalculator.Console"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OutputFiles", "OutputFiles", "{14D03DAF-2BCA-41BD-8451-B60600FAB7CF}"
 	ProjectSection(SolutionItems) = preProject
-		..\test_data.csv = ..\test_data.csv
+		..\boxed_positions_expected.csv = ..\boxed_positions_expected.csv
+		..\net_positions_expected.csv = ..\net_positions_expected.csv
 	EndProjectSection
 EndProject
 Global

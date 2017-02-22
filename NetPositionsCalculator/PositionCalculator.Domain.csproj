@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,14 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Calculators\BoxedPositionCalculator.cs" />
+    <Compile Include="Calculators\IBoxedPositionCalculator.cs" />
+    <Compile Include="Calculators\ICalculate.cs" />
+    <Compile Include="Calculators\INetPositionsCalculator.cs" />
+    <Compile Include="Calculators\Strategies\BoxedPositionStrategy.cs" />
+    <Compile Include="Configuration\PositionCalculatorConfiguration.cs" />
+    <Compile Include="Configuration\IPositionCalculatorConfiguration.cs" />
+    <Compile Include="Director\IPositionCalculator.cs" />
+    <Compile Include="Director\PositionCalculator.cs" />
+    <Compile Include="Factories\PositionFactory.cs" />
+    <Compile Include="Models\EmptyPosition.cs" />
+    <Compile Include="Models\Exetensions\PostionCalculatorExtensions.cs" />
+    <Compile Include="Models\Interfaces\IPosition.cs" />
+    <Compile Include="Models\Interfaces\IPositions.cs" />
+    <Compile Include="Models\UnitalizedPositions.cs" />
+    <Compile Include="Models\Positions.cs" />
+    <Compile Include="Models\Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FileReaderService.cs" />
+    <Compile Include="Services\IFileReaderService.cs" />
+    <Compile Include="Services\IFileWriterService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configuration\" />
-    <Folder Include="Factories\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

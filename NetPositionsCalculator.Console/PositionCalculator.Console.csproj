@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NetPositionsCalculator\PositionCalculator.csproj">
+    <ProjectReference Include="..\NetPositionsCalculator\PositionCalculator.Domain.csproj">
       <Project>{4380269b-1815-49a4-a744-a4743aef17b1}</Project>
-      <Name>PositionCalculator</Name>
+      <Name>PositionCalculator.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

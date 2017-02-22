@@ -39,7 +39,13 @@ namespace SoftwareTest
 
             /*
 
+            --Order Of Operations
+            --Size of Arrays, test for stack overflow
+            --
+
             */
+
+            return FindMax(numbers) == 9 && FindMax(sorted) == 9;
 
             return sorted.First() == 3
                    && sorted.Last() == 9

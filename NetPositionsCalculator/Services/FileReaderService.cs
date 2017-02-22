@@ -11,24 +11,23 @@ namespace mlp.interviews.boxing.problem.Services
     /// <summary>
     /// Assume a single file of appriopriate size.
     /// </summary>
-    public class FileReaderService : IFileReaderService
+    public static class FileReaderService 
     {
+        private static readonly IPositionCalculatorConfiguration _positionCalculatorConfiguration;
 
-        private readonly IPositionCalculatorConfiguration _positionCalculatorConfiguration;
-
-        public FileReaderService()
+        static FileReaderService()
         {
-            this._positionCalculatorConfiguration = new PositionCalculatorConfiguration();
+          _positionCalculatorConfiguration = new PositionCalculatorConfiguration();
         }
 
-        public IEnumerable<string[]> ReadFile(string filePath)
+        public static IEnumerable<string[]> ReadFile(string filePath)
         {
             try
             {
                 if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
                 return File
                     .ReadAllLines(filePath)
-                    .Select(ro => ro.Split(this._positionCalculatorConfiguration.ApplicationFileDeliminator));
+                    .Select(ro => ro.Split(_positionCalculatorConfiguration.ApplicationFileDeliminator));
 
             }
             catch (Exception exception)

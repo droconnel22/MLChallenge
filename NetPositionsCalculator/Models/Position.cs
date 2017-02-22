@@ -23,6 +23,8 @@ namespace mlp.interviews.boxing.problem.Models
             this.Price = price;
         }
 
+        public override string ToString() => $"{this.Trader},{this.Symbol},{this.Quantity}";
+
         public override bool Equals(object obj)
         {
             return this.Equals(obj);

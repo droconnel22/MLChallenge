@@ -13,6 +13,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SoftwareTest", "SoftwareTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareTest", "SoftwareTest\SoftwareTest.csproj", "{5BCC0454-0691-4B22-93B3-9D849BB24799}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PositionCalculator", "PositionCalculator", "{A5AC9E7F-3B78-49A6-A439-1D5AE10258E7}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.Txt = ReadMe.Txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPositionsCalculator", "NetPositionsCalculator\NetPositionsCalculator.csproj", "{4380269B-1815-49A4-A744-A4743AEF17B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{309C6E7D-828D-40D2-81E9-01AB931F6476}"
+	ProjectSection(SolutionItems) = preProject
+		..\boxed_positions_expected.csv = ..\boxed_positions_expected.csv
+		..\net_positions_expected.csv = ..\net_positions_expected.csv
+		..\test_data.csv = ..\test_data.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +37,17 @@ Global
 		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BCC0454-0691-4B22-93B3-9D849BB24799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4380269B-1815-49A4-A744-A4743AEF17B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4380269B-1815-49A4-A744-A4743AEF17B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4380269B-1815-49A4-A744-A4743AEF17B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4380269B-1815-49A4-A744-A4743AEF17B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5BCC0454-0691-4B22-93B3-9D849BB24799} = {68D5637E-80BD-45DB-B374-AF3693B9021E}
+		{4380269B-1815-49A4-A744-A4743AEF17B1} = {A5AC9E7F-3B78-49A6-A439-1D5AE10258E7}
+		{309C6E7D-828D-40D2-81E9-01AB931F6476} = {A5AC9E7F-3B78-49A6-A439-1D5AE10258E7}
 	EndGlobalSection
 EndGlobal

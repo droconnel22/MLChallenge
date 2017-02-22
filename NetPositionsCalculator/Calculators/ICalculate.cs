@@ -5,6 +5,6 @@ namespace mlp.interviews.boxing.problem.Calculators
 {
     internal interface ICalculate
     {
-        IEnumerable<string[]> Calculate(IPositions positions);
+        IEnumerable<string> Calculate(IPositions positions);
     }
 }

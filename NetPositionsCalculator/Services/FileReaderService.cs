@@ -18,7 +18,7 @@ namespace mlp.interviews.boxing.problem.Services
 
         public FileReaderService()
         {
-            
+            this._positionCalculatorConfiguration = new PositionCalculatorConfiguration();
         }
 
         public IEnumerable<string[]> ReadFile(string filePath)

@@ -21,6 +21,7 @@ namespace SoftwareTest
                 .Take(n)
                 .ToArray();
 
+        //Orderby is stable and better performing then Sort()
         public int[] Sort(int[] numbers) => 
             numbers
             .OrderBy(n => n)

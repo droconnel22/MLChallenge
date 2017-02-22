@@ -13,7 +13,7 @@ namespace mlp.interviews.boxing.problem.Calculators
             this.netPositionStrategy = positionStrategy;
         }
 
-        public IEnumerable<string> Calculate(IPositions positions)
+        public IEnumerable<IPosition> Calculate(IPositions positions)
         {
             throw new System.NotImplementedException();
         }

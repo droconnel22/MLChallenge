@@ -42,9 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculators\BoxedPositionCalculator.cs" />
-    <Compile Include="Calculators\IBoxedPositionCalculator.cs" />
     <Compile Include="Calculators\ICalculate.cs" />
-    <Compile Include="Calculators\INetPositionsCalculator.cs" />
     <Compile Include="Calculators\NetPositionCalculator.cs" />
     <Compile Include="Calculators\Strategies\BoxedPositionStrategy.cs" />
     <Compile Include="Calculators\Strategies\IPositionStrategy.cs" />

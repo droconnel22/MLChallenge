@@ -17,7 +17,7 @@ namespace mlp.interviews.boxing.problem.Calculators
 
 
         //Synchronous approach
-        public IEnumerable<string> Calculate(IPositions positions)
+        public IEnumerable<IPosition> Calculate(IPositions positions)
         {
          
             

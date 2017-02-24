@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using mlp.interviews.boxing.problem.Models.Interfaces;
+using System.Linq;
 
 namespace mlp.interviews.boxing.problem.Models
 {
@@ -13,5 +15,11 @@ namespace mlp.interviews.boxing.problem.Models
         }
 
         public IEnumerable<IPosition> GetPositions() => this.positions;
+
+        public IList<IGrouping<string, IPosition>> GroupByTrader() =>
+            this.positions
+            .GroupBy(p => p.Trader)
+            .ToList();
+          //  .ToDictionary(g => g.Key, g => g.ToList());
     }
 }

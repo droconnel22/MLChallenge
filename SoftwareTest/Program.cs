@@ -15,7 +15,7 @@ namespace SoftwareTest
 
         public static void Main(string[] args)
         {
-            ChallengeExtenstions.PrintChallengeResult(Program.challenges);
+            challenges.PrintChallengeResult();
             Console.ReadLine();
         }
     }

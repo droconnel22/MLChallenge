@@ -8,5 +8,7 @@ namespace mlp.interviews.boxing.problem.Models.Interfaces
     public interface IPositions
     {
         IEnumerable<IPosition> GetPositions();
+
+        IList<IGrouping<string, IPosition>> GroupByTrader();
     }
 }

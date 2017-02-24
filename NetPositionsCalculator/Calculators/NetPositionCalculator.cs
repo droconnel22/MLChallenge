@@ -1,21 +1,18 @@
 ﻿using System.Collections.Generic;
 using mlp.interviews.boxing.problem.Calculators.Strategies;
 using mlp.interviews.boxing.problem.Models.Interfaces;
+using mlp.interviews.boxing.problem.Models;
+using System.Linq;
 
+//http://stackoverflow.com/questions/16522645/linq-groupby-sum-and-count
 namespace mlp.interviews.boxing.problem.Calculators
 {
-    internal sealed class NetPositionCalculator : ICalculate
+    public sealed class NetPositionCalculator : ICalculate
     {
-        private readonly IPositionStrategy netPositionStrategy;
-
-        public NetPositionCalculator(IPositionStrategy positionStrategy)
-        {
-            this.netPositionStrategy = positionStrategy;
-        }
-
-        public IEnumerable<IPosition> Calculate(IPositions positions)
-        {
-            throw new System.NotImplementedException();
-        }
+        public IEnumerable<IPosition> Calculate(IPositions positions) => 
+            positions
+                .GroupByTrader()
+                .SelectMany(p => p.Select(pos =>
+               new Position(pos.Trader, pos.Broker, pos.Symbol, p.Sum(pss => pss.Price), pos.Price)));
     }
 }

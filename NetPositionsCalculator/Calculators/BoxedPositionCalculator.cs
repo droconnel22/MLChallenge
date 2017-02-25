@@ -11,6 +11,7 @@ namespace mlp.interviews.boxing.problem.Calculators
         public BoxedPositionCalculator()
         {           
         }
+
         //Synchronous approach
         //A trader has long (quantity > 0) and short (quantity < 0
         //positions for the same symbol at different brokers.
@@ -41,12 +42,8 @@ namespace mlp.interviews.boxing.problem.Calculators
         private int GetAbsoluteQuantityValue(IGrouping<object, IPosition> subSetPositions)
         {
             var positiveSum = subSetPositions.Where(ssp => ssp.Quantity > 0).Sum(ssp => ssp.Quantity);
-
             var negativeSum = Math.Abs(subSetPositions.Where(ssp => ssp.Quantity < 0).Sum(ssp => ssp.Quantity));
-
-
-          return  positiveSum >= negativeSum ? negativeSum : positiveSum;
-
+            return  positiveSum >= negativeSum ? negativeSum : positiveSum;
         }
     }
 }

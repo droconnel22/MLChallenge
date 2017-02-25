@@ -27,7 +27,7 @@ namespace NetPositionsCalculator.Test.BoxedPositionTests
 
                 Assert.AreEqual("Joe", result.Trader);
                 Assert.AreEqual("IBM.N", result.Symbol);
-                Assert.AreEqual(50, result.Quantity);
+                Assert.AreEqual(80, result.Quantity);
             }
             
 

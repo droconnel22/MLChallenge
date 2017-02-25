@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using mlp.interviews.boxing.problem.Models.Interfaces;
 
 namespace mlp.interviews.boxing.problem.Models
@@ -23,6 +24,9 @@ namespace mlp.interviews.boxing.problem.Models
         }
 
         public IEnumerable<IPosition> GetPositions() => new List<IPosition>();
-        
+
+        public IList<IGrouping<string, IPosition>> GroupByTrader() => new List<IGrouping<string, IPosition>>();
+
+        public IEnumerable<string> PrintToFile() => new List<string>();
     }
 }

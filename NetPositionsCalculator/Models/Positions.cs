@@ -19,7 +19,6 @@ namespace mlp.interviews.boxing.problem.Models
         public IList<IGrouping<string, IPosition>> GroupByTrader() =>
             this.positions
             .GroupBy(p => p.Trader)
-            .ToList();
-          //  .ToDictionary(g => g.Key, g => g.ToList());
+            .ToList();             
     }
 }

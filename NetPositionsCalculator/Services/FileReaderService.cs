@@ -28,7 +28,9 @@ namespace mlp.interviews.boxing.problem.Services
                 if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
                 return File
                     .ReadAllLines(filePath)
-                    .Select(ro => ro.Split(_positionCalculatorConfiguration.ApplicationFileDeliminator));
+                    .Skip(1)
+                    .Select(ro => ro.Split(_positionCalculatorConfiguration.ApplicationFileDeliminator))
+                    .ToList();
 
             }
             catch (Exception exception)

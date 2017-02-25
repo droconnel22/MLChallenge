@@ -25,7 +25,7 @@ namespace mlp.interviews.boxing.problem.Director
         {
             this._positionCalculatorConfiguration = new PositionCalculatorConfiguration();
             this.boxedPositionCalculator = new BoxedPositionCalculator(new BoxedPositionStrategy());
-            this.netPositionCalculator = new NetPositionCalculator(new NetPositionStrategy());
+            this.netPositionCalculator = new NetPositionCalculator();
             this.positions = UnitalizedPositions.GetInstance();
         }
 

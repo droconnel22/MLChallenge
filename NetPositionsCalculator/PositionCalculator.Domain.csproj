@@ -62,8 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FileReaderService.cs" />
     <Compile Include="Services\FileWriterService.cs" />
-    <Compile Include="Services\IFileReaderService.cs" />
-    <Compile Include="Services\IFileWriterService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

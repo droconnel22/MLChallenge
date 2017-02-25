@@ -16,7 +16,7 @@ namespace mlp.interviews.boxing.problem.Configuration
                 fileDeliminator = result[0];
             }
 
-            get { return fileDeliminator; }
+            get { return ','; }
         } 
 
         public string NetPositionInputFile => ConfigurationManager.AppSettings["NetPositionInputFile"];

@@ -38,6 +38,15 @@ namespace mlp.interviews.boxing.problem.Calculators
             return boxedPositions;
         }
 
-        private int GetAbsoluteQuantityValue(IGrouping<object, IPosition> gorupedPositoins) => (int)Math.Abs(gorupedPositoins.Sum(p => p.Quantity));
+        private int GetAbsoluteQuantityValue(IGrouping<object, IPosition> subSetPositions)
+        {
+            var positiveSum = subSetPositions.Where(ssp => ssp.Quantity > 0).Sum(ssp => ssp.Quantity);
+
+            var negativeSum = Math.Abs(subSetPositions.Where(ssp => ssp.Quantity < 0).Sum(ssp => ssp.Quantity));
+
+
+          return  positiveSum >= negativeSum ? negativeSum : positiveSum;
+
+        }
     }
 }

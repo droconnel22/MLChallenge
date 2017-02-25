@@ -3,7 +3,7 @@ using mlp.interviews.boxing.problem.Models.Interfaces;
 
 namespace mlp.interviews.boxing.problem.Calculators
 {
-    internal interface ICalculate
+    public  interface ICalculate
     {
         IEnumerable<IPosition> Calculate(IPositions positions);
     }

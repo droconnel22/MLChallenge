@@ -16,10 +16,11 @@ namespace NetPositionsCalculator.Console
         {
             try
             {
+                //.RunNetPositionCalculator()
                 System.Console.WriteLine("Running....");
                 positionCalculator
                     .InitalizePositions()
-                    .RunNetPositionCalculator()
+                    
                     .RunBoxedPositionCalculator();
                 System.Console.WriteLine("Completed Successfully.");
             }

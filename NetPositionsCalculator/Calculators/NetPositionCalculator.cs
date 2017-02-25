@@ -10,9 +10,12 @@ namespace mlp.interviews.boxing.problem.Calculators
     {
         //for completeness (.net complier automatically generates)
         public NetPositionCalculator(){ }
+
         //Could be made parallel with PLinq, however order will not be preserved and 
         //input data sample is too small to justify overhead cost.
         //price could be made decimal, but kept int for contrived case.
+        //GroupBy and set-aggregation methods (Union, Intersect and Except) use hashing, 
+        //so they should be close to O(N) instead of O(N²).
         public IEnumerable<IPosition> Calculate(IPositions positions) => 
           positions
                 .GetPositions()

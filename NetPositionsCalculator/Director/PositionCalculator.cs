@@ -21,10 +21,11 @@ namespace mlp.interviews.boxing.problem.Director
 
         private IPositions positions;
 
+        //Can use IoC here
         public PositionCalculator()
         {
             this._positionCalculatorConfiguration = new PositionCalculatorConfiguration();
-            this.boxedPositionCalculator = new BoxedPositionCalculator(new BoxedPositionStrategy());
+            this.boxedPositionCalculator = new BoxedPositionCalculator();
             this.netPositionCalculator = new NetPositionCalculator();
             this.positions = UnitalizedPositions.GetInstance();
         }

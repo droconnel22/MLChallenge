@@ -32,6 +32,7 @@ namespace SoftwareTest
                 .ToArray();
 
         //Orderby is stable and better performing then Sort()
+        //Orderby runs O(N log N) for average case.
         public int[] Sort(int[] numbers) => 
             numbers
             .OrderBy(n => n)

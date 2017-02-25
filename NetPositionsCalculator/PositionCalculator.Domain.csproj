@@ -44,9 +44,6 @@
     <Compile Include="Calculators\BoxedPositionCalculator.cs" />
     <Compile Include="Calculators\ICalculate.cs" />
     <Compile Include="Calculators\NetPositionCalculator.cs" />
-    <Compile Include="Calculators\Strategies\BoxedPositionStrategy.cs" />
-    <Compile Include="Calculators\Strategies\IPositionStrategy.cs" />
-    <Compile Include="Calculators\Strategies\NetPositionStrategy.cs" />
     <Compile Include="Configuration\PositionCalculatorConfiguration.cs" />
     <Compile Include="Configuration\IPositionCalculatorConfiguration.cs" />
     <Compile Include="Director\IPositionCalculator.cs" />

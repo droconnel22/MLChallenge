@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using mlp.interviews.boxing.problem.Calculators.Strategies;
 using mlp.interviews.boxing.problem.Models.Interfaces;
 using mlp.interviews.boxing.problem.Models;
 

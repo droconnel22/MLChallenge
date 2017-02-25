@@ -20,12 +20,16 @@ namespace mlp.interviews.boxing.problem.Factories
 
         private static int TranslateToQuantity(string s)
         {
-            return Convert.ToInt32(s);
+            int result;
+            int.TryParse(s, out result);
+            return result;
         }
 
         private static int TranslateToPrice(string s)
         {
-            return Convert.ToInt32(s);
+            int result;
+            int.TryParse(s, out result);
+            return result;
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using mlp.interviews.boxing.problem.Calculators;
-using mlp.interviews.boxing.problem.Calculators.Strategies;
+﻿using mlp.interviews.boxing.problem.Calculators;
 using mlp.interviews.boxing.problem.Configuration;
 using mlp.interviews.boxing.problem.Models;
 using mlp.interviews.boxing.problem.Models.Exetensions;

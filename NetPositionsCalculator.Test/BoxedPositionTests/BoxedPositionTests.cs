@@ -21,9 +21,13 @@ namespace NetPositionsCalculator.Test.BoxedPositionTests
            var results = this.boxedPositionCalculator.Calculate(TestUtility.GetValidPositions());
 
             //Assert
+            Assert.IsNotNull(results);
             foreach (var result in results)
             {
-                System.Console.WriteLine(result.ToString());
+
+                Assert.AreEqual("Joe", result.Trader);
+                Assert.AreEqual("IBM.N", result.Symbol);
+                Assert.AreEqual(50, result.Quantity);
             }
             
 

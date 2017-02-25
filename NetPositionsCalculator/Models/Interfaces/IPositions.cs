@@ -10,5 +10,7 @@ namespace mlp.interviews.boxing.problem.Models.Interfaces
         IEnumerable<IPosition> GetPositions();
 
         IList<IGrouping<string, IPosition>> GroupByTrader();
+
+        IList<IGrouping<object, IPosition>> GroupByTraderAndSymbol();
     }
 }

@@ -19,6 +19,12 @@ namespace mlp.interviews.boxing.problem.Models
         public IList<IGrouping<string, IPosition>> GroupByTrader() =>
             this.positions
             .GroupBy(p => p.Trader)
-            .ToList();             
+            .ToList();      
+
+        public IList<IGrouping<object, IPosition>> GroupByTraderAndSymbol() => 
+            this.positions                 
+                 .GroupBy(ps => (object)new { ps.Trader, ps.Symbol })
+                 .ToList();
+
     }
 }

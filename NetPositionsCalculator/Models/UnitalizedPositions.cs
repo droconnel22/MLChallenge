@@ -27,6 +27,8 @@ namespace mlp.interviews.boxing.problem.Models
 
         public IList<IGrouping<string, IPosition>> GroupByTrader() => new List<IGrouping<string, IPosition>>();
 
+        public IList<IGrouping<object, IPosition>> GroupByTraderAndSymbol() => new List<IGrouping<object, IPosition>>();
+
         public IEnumerable<string> PrintToFile() => new List<string>();
     }
 }

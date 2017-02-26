@@ -19,31 +19,28 @@ namespace mlp.interviews.boxing.problem.Calculators
         //absolute sum of all short positions. 
         //ie. minimum of (100 + 30) and abs(-50) is 50
         public IEnumerable<IPosition> Calculate(IPositions positions)
-        {
-            var boxedPositions = new List<IPosition>();           
+        {                
             foreach (var groupedPositions in positions.GroupByTraderAndSymbol())
             {
                 if(groupedPositions.Select(gp => gp.Broker).Distinct().Count() > 1
                     && groupedPositions.Any(pp => pp.Quantity < 0) 
                     && groupedPositions.Any(pp => pp.Quantity > 0))
                 {
-                     boxedPositions.Add(new Position(
+                      yield return new Position(
                         groupedPositions.First().Trader,
                         groupedPositions.First().Broker,
                         groupedPositions.First().Symbol,
                         GetAbsoluteQuantityValue(groupedPositions),
-                        groupedPositions.First().Price));
+                        groupedPositions.First().Price);
                 }               
             }
-
-            return boxedPositions;
         }
 
         private int GetAbsoluteQuantityValue(IGrouping<object, IPosition> subSetPositions)
         {
             var positiveSum = subSetPositions.Where(ssp => ssp.Quantity > 0).Sum(ssp => ssp.Quantity);
             var negativeSum = Math.Abs(subSetPositions.Where(ssp => ssp.Quantity < 0).Sum(ssp => ssp.Quantity));
-            return  positiveSum >= negativeSum ? negativeSum : positiveSum;
+            return positiveSum >= negativeSum ? negativeSum : positiveSum;
         }
     }
 }

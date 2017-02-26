@@ -8,12 +8,10 @@ namespace mlp.interviews.boxing.problem.Director
 {
     public interface IPositionCalculator
     {
-
         IPositionCalculator InitalizePositions();
 
         IPositionCalculator RunNetPositionCalculator();
 
-        IPositionCalculator RunBoxedPositionCalculator();
-      
+        IPositionCalculator RunBoxedPositionCalculator();      
     }
 }

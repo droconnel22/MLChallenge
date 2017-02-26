@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using mlp.interviews.boxing.problem.Models.Interfaces;
 using System.Linq;
 

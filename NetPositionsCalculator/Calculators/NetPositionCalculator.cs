@@ -18,12 +18,14 @@ namespace mlp.interviews.boxing.problem.Calculators
         //so they should be close to O(N) instead of O(N²).
         public IEnumerable<IPosition> Calculate(IPositions positions) => 
           positions
-                .GetPositions()
-                .GroupBy(p =>new { p.Trader, p.Symbol })               
+               .GroupByTraderAndSymbol()       
                 .Select(pos =>
-                    new Position(pos.First().Trader, pos.First().Broker, pos.First().Symbol, (int)pos.Sum(pl => pl.Quantity) , pos.First().Price))
+                    new Position(pos.First().Trader, pos.First().Broker, pos.First().Symbol, SumQuantity(pos), pos.First().Price))
                 .ToList();
-    }
+
+        private int SumQuantity(IEnumerable<IPosition> localPositions) => localPositions.Sum(pl => pl.Quantity);
+
+    }    
 }
 
 /*
